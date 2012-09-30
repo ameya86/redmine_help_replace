@@ -1,0 +1,23 @@
+default: 'http://books.google.co.jp/books?id=zo_8BEKOmJAC&printsec=frontcover'
+welcome:
+  index: 'http://books.google.co.jp/books?id=zo_8BEKOmJAC&printsec=frontcover'
+projects:
+  show: 'http://books.google.co.jp/books?id=zo_8BEKOmJAC&pg=PA28'
+activities:
+  index: 'http://books.google.co.jp/books?id=zo_8BEKOmJAC&pg=PA9'
+versions:
+  index: 'http://books.google.co.jp/books?id=zo_8BEKOmJAC&pg=PA71'
+issues:
+  index: 'http://books.google.co.jp/books?id=zo_8BEKOmJAC&pg=PA31'
+  new: 'http://books.google.co.jp/books?id=zo_8BEKOmJAC&pg=PA28'
+  show: 'http://books.google.co.jp/books?id=zo_8BEKOmJAC&pg=PA32'
+  edit: 'http://books.google.co.jp/books?id=zo_8BEKOmJAC&pg=PA32'
+calendars:
+  show: 'http://books.google.co.jp/books?id=zo_8BEKOmJAC&pg=PA76'
+gantts:
+  show: 'http://books.google.co.jp/books?id=zo_8BEKOmJAC&pg=PA73'
+timelog:
+  default: 'http://books.google.co.jp/books?id=zo_8BEKOmJAC&pg=PA81'
+my:
+  page: 'http://books.google.co.jp/books?id=zo_8BEKOmJAC&pg=PA132'
+  account: 'http://books.google.co.jp/books?id=zo_8BEKOmJAC&pg=PA212'
