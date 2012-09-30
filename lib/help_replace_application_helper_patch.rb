@@ -8,6 +8,7 @@ module HelpReplaceApplicationHelperPatch
   module InstanceMethods # obj.method
     @@help_replace_links = nil
 
+    # 差し替えるURLを取得する
     def url_for_help_replace(controller_name, action_name)
       help_replace_links = load_help_replace
 
@@ -29,12 +30,13 @@ module HelpReplaceApplicationHelperPatch
     # ymlファイルの場所
     def help_replace_yaml_file
       unless @help_replace_yaml_file
-#        if Redmine::Plugin.requires_redmine(:version_or_higher => '2.0.0')
-#          # 2.x
-#        else
+        if Redmine::VERSION::MAJOR >= 2
+          # 2.x
+          @help_replace_yaml_file = "#{Rails.root}/plugins/redmine_help_replace/files/help_replace.yml"
+        else
           # 1.x
           @help_replace_yaml_file = "#{RAILS_ROOT}/vendor/plugins/redmine_help_replace/files/help_replace.yml"
-#        end
+        end
       end
 
       return @help_replace_yaml_file

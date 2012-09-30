@@ -1,0 +1,13 @@
+<% help_replace_url = url_for_help_replace(controller_name, action_name) %>
+<% if help_replace_url.present? %>
+<% javascript_tag do %>
+function help_replace() {
+  var help_link = document.getElementById('top-menu').getElementsByClassName('help')[0];
+  if (null != help_link) {
+    help_link.href = '<%= help_replace_url %>';
+  }
+}
+
+help_replace();
+<% end %>
+<% end %>
